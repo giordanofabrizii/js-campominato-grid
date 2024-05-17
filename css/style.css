@@ -52,3 +52,15 @@ main {
     text-align: center;
     line-height: 3.9rem;
 }
+
+.cella > *{
+    display: none;
+}
+
+.cella.active {
+    background-color: red;
+}
+
+.cella.active > * {
+    display: inline;
+}

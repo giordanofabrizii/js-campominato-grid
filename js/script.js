@@ -10,8 +10,12 @@ playButton.addEventListener('click', function(){
     // genero le celle al click del play
     for (let i = 1; i < numberOfCell + 1; i++) {
         let article = document.createElement("article");
-        article.append(i);
+        article.innerHTML = `<p>${i}</p>`
         article.classList.toggle("cella");
         campoContainerEl.appendChild(article);
+
+        article.addEventListener('click', function(){
+            article.classList.toggle("active");
+        });
     }
 });
