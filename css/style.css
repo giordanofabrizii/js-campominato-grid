@@ -27,6 +27,10 @@ img[alt="boolean logo"]{
     padding: 0 1rem;
 }
 
+form {
+    margin-right: 1rem;
+}
+
 /* < /////////////// */
 /* > MAIN */
 /* < /////////////// */
@@ -45,22 +49,35 @@ main {
 }
 
 .cella {
-    width: calc(100% / 10);
     aspect-ratio: 1 / 1;
     border: 2px solid white;
     font-size: 1.5rem;
-    text-align: center;
-    line-height: 3.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.cella > *{
+.cella > p{
     display: none;
+    font-size: 2rem;
 }
 
 .cella.active {
     background-color: red;
 }
 
-.cella.active > * {
+.cella.active > p {
     display: inline;
+}
+
+.cella.easy{
+    width: calc(100% / 7);
+}
+
+.cella.normal{
+    width: calc(100% / 9);
+}
+
+.cella.hard{
+    width: calc(100% / 10);
 }
