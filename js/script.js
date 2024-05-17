@@ -30,6 +30,7 @@ playButton.addEventListener('click', function(){
 
         article.addEventListener('click', function(){
             article.classList.toggle("active");
+            console.log(this.innerText);
         });
     }
 });

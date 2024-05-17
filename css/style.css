@@ -58,17 +58,17 @@ main {
 }
 
 .cella > p{
-    display: none;
+    /* display: none; */
     font-size: 2rem;
 }
 
 .cella.active {
-    background-color: red;
+    background-color: yellow;
 }
 
-.cella.active > p {
+/* .cella.active > p {
     display: inline;
-}
+} */
 
 .cella.easy{
     width: calc(100% / 7);
