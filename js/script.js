@@ -1,9 +1,17 @@
 const campoContainerEl = document.getElementById("campo-container");
 
-let difficolta = "hard"
+let numberOfCell = 100;
 
-// genero le celle al click del play
 const playButton = document.getElementById("start-game");
 playButton.addEventListener('click', function(){
-    console.log(difficolta)
+    // prima svuoto il container
+    campoContainerEl.innerHTML = ''
+
+    // genero le celle al click del play
+    for (let i = 1; i < numberOfCell + 1; i++) {
+        let article = document.createElement("article");
+        article.append(i);
+        article.classList.toggle("cella");
+        campoContainerEl.appendChild(article);
+    }
 });
